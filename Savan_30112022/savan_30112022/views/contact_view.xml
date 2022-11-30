@@ -1,0 +1,24 @@
+<odoo>
+    <template id="contacts_template_page" name="Contacts">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Contacts</t>
+                <h3>All Contacts</h3>
+                <div class="container">
+                    <div class="flex-block">
+                        <div class="flex-container" t-foreach="contacts" t-as="contact">
+                            <a t-attf-href="/contact/#{contact.id}" target="_blank">
+                            <div>
+                                <img class="img img-responsive" t-attf-src="/web/image/res.partner/#{contact.id}/image_1920"/><br></br>
+                                <t t-out="contact.name"/><br></br>
+                                <span class="mail"><t t-out="contact.email"/></span>
+                            </div><br></br>          
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+        </t>                    
+    </template>
+
+
+   
+</odoo>

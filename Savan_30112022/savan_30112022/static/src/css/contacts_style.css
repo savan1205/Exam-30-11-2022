@@ -1,0 +1,87 @@
+.flex-block {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  /*background-color: DodgerBlue;*/
+}
+
+.flex-block > .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   background-color: #f1f1f1;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  line-height: 75px;
+  font-size: 50px;
+}
+
+.mail{
+  font-size: 10px !important;
+}
+
+.img-responsive{
+  width: 199px;
+  margin-left: 15%;
+}
+
+.btn-submit{
+  background-color: #15a1a3;
+  width: 10%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+input[type=text], select {
+  
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display:block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background:transparent ;
+  font-weight: 400;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background:transparent ;
+  font-weight: 400;
+}
+input[type=phone], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background:transparent ;
+  font-weight: 400;
+}
+
+input[type=hidden]{
+  font-size: 1px;
+} 
